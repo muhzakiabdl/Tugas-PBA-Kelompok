@@ -1,1 +1,21 @@
+#Hasil
+Hasil Akhir:
+Akurasi Terakhir - Train: 46.01%
+Akurasi Terakhir - Test: 67.41%
+Waktu Pelatihan Total: 63.23 detik
+Train Accuracy meningkat dari 42.47% (epoch 4) menjadi 46.01% (epoch 10).
+Namun, angka ini masih cukup rendah untuk dataset yang relatif sederhana seperti AG News. 
+Test Accuracy mencapai puncak di 67.41% (epoch 10), menunjukkan bahwa model dapat menghasilkan generalisasi yang moderat,
+meskipun hasil ini juga masih bisa ditingkatkan.
 
+#Dataset (Apakah membutuhkan yang lebih besar?)
+Jika memungkinkan, gunakan dataset yang lebih besar atau augmentasi data untuk meningkatkan akurasi,
+seperti menambahkan lebih banyak sampel per kategori.
+
+#Waktu dan Sumber Daya Komputasi
+Total waktu pelatihan adalah 63.23 detik untuk 10 epoch.
+Penggunaan waktu relatif singkat karena model FastText sederhana dan hanya menggunakan embedding rata-rata tanpa lapisan kompleks.
+
+#Jelaskan Generalisasi
+Model tampaknya belum mengalami overfitting karena perbedaan antara akurasi training (46.01%) dan testing (67.41%) cukup besar.
+Hal ini menunjukkan bahwa model perlu lebih banyak belajar dari data training.
